@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button href="\unknownpage.html">Кнопка</button>
+</body>
+    <script>
+        function skipDefault(eventName, target) {
+        target.addEventListener(eventName, function (eventName) {
+        eventName.preventDefault();
+    });
+}
+skipDefault('click', document.querySelector('button'));
+    </script>
+
+</html>
